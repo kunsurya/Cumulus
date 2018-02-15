@@ -15,7 +15,7 @@ namespace Cumulus
 
     class Program
     {
-        private const string vCloudUrl = "https://skyboxlabs.cerner.com";
+        private const string vCloudUrl = "<your org's base vCloud url>";
 
         private static void ResolveMergedAssesmblies()
         {
@@ -76,7 +76,7 @@ namespace Cumulus
                 switch (param[0])
                 {
                     case "-u":
-                        parameters.Username = param[1] + "@labs";
+                        parameters.Username = param[1] + "@labs"; //user@org; Fix this for your org.
                         break;
                     case "-p":
                         parameters.Password = param[1];
